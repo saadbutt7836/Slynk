@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Sloop</string>
+    <string name="app_font">Roboto</string>
+    <string name="phone_digits">0123456789</string>
+    <string name="user_name_restrictions">abcdefghijklmnopqrstuvwxyz1234567890_-.</string>
+    <string name="optional">optional</string>
+    <string name="send_request">sent you friend request</string>
+    <string name="like_post">liked your post</string>
+    <string name="comment_post">commented on your post</string>
+    <string name="accept_request">accepted your request</string>
+
+</resources>

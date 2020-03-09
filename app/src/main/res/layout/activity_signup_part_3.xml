@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_signup_part3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:padding="7dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="65dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@string/app_font"
+                    android:text="Welcome to Slynk"
+                    android:textColor="@color/colorTitle"
+                    android:textSize="24.0dip"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1.0dip"
+                android:layout_weight="8.0"
+                android:orientation="vertical"
+                android:weightSum="5.0">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="80.0dip"
+                    android:layout_margin="1.0dip"
+                    android:layout_weight="1.0"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5.0dip"
+                        android:fontFamily="@string/app_font"
+                        android:text="GRADUATION YEAR"
+                        android:textColor="@color/colorTitle"
+                        android:textSize="13.0dip"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round_corner_background"
+                        android:backgroundTint="@color/colorFieldBack">
+
+                        <Spinner
+                            android:id="@+id/spinner_GraduationYear"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_margin="2.0dip"
+                            android:fontFamily="@string/app_font" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="80.0dip"
+                    android:layout_margin="1.0dip"
+                    android:layout_weight="1.0"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5.0dip"
+                        android:fontFamily="@string/app_font"
+                        android:text="GENDER"
+                        android:textColor="@color/colorTitle"
+                        android:textSize="13.0dip"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round_corner_background"
+                        android:backgroundTint="@color/colorFieldBack">
+
+                        <Spinner
+                            android:id="@+id/spinner_Gender"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_margin="2.0dip"
+                            android:fontFamily="@string/app_font" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5.0dip"
+                        android:fontFamily="@string/app_font"
+                        android:text="DATE OF BIRTH"
+                        android:textColor="@color/colorTitle"
+                        android:textSize="15.0dip"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="80.0dip"
+                    android:layout_margin="1.0dip"
+                    android:layout_weight="0.0"
+                    android:orientation="horizontal"
+                    android:weightSum="3.0">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1.0dip"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5.0dip"
+                            android:fontFamily="@string/app_font"
+                            android:text="MONTH"
+                            android:textColor="@color/colorTitle"
+                            android:textSize="13.0dip"
+                            android:textStyle="bold" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/round_corner_background"
+                            android:backgroundTint="@color/colorFieldBack">
+
+                            <Spinner
+                                android:id="@+id/spinner_Month"
+                                android:layout_width="match_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="2.0dip"
+                                android:fontFamily="@string/app_font" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5.0dip"
+                            android:fontFamily="@string/app_font"
+                            android:text="DAY"
+                            android:textColor="@color/colorTitle"
+                            android:textSize="13.0dip"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/editText_Day"
+                            android:layout_width="match_parent"
+                            android:layout_height="50.0dip"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/round_corner_background"
+                            android:backgroundTint="@color/colorFieldBack"
+                            android:fontFamily="@string/app_font"
+                            android:inputType="number"
+                            android:paddingLeft="7dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5.0dip"
+                            android:fontFamily="@string/app_font"
+                            android:text="YEAR"
+                            android:textColor="@color/colorTitle"
+                            android:textSize="13.0dip"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/editText_Year"
+                            android:layout_width="match_parent"
+                            android:layout_height="50.0dip"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/round_corner_background"
+                            android:backgroundTint="@color/colorFieldBack"
+                            android:fontFamily="@string/app_font"
+                            android:inputType="number"
+                            android:paddingLeft="7dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1.0dip">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="40.0dip"
+                        android:fontFamily="@string/app_font"
+                        android:text="By Signing up, I agree to the term and privacy policy"
+                        android:textColor="@color/colorTitle"
+                        android:textSize="17.0dip"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="60.0dip"
+                    android:layout_marginTop="20dip"
+                    android:layout_weight="1.0"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/signUpPart3Back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="40dp"
+                        android:background="@drawable/clickable_focusable_straight"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:focusableInTouchMode="false"
+                        android:fontFamily="@string/app_font"
+                        android:onClick="signUpPart3Back"
+                        android:text="Back"
+                        android:textColor="@color/colorPink"
+                        android:textSize="15dip"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/signUpButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/round_corner_background"
+                        android:backgroundTint="@color/colorPink"
+                        android:fontFamily="@string/app_font"
+                        android:text="Sign up"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="13.0dip" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="70dp"
+                android:background="@drawable/clickable_focusable_straight"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="false">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@string/app_font"
+                    android:text="Already have an account?"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Sign in"
+                    android:textColor="@color/colorPink"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

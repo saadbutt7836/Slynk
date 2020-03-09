@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/liveSearchLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="5dp"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageView_RespondProfile"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/circle_stroke_profile_layout"
+        android:padding="1.3dp" />
+
+    <TextView
+        android:id="@+id/textView_RespondFullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@+id/imageView_RespondProfile"
+        android:fontFamily="@string/app_font"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/textView_RespondUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_RespondFullName"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/imageView_RespondProfile"
+        android:textColor="@color/colorBlack"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:id="@+id/confirm_decline_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_ConfirmRequest"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/round_corner_background"
+            android:backgroundTint="@color/colorLightBlue"
+            android:fontFamily="@string/app_font"
+            android:text="Confirm"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_DeclineRequest"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/round_corner_background"
+            android:backgroundTint="@color/colorLightGrey"
+            android:fontFamily="@string/app_font"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/colorTitle"
+            android:textSize="12sp" />
+    </LinearLayout>
+</RelativeLayout>

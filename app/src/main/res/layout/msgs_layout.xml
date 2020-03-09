@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/textView_Time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/round_corner_stroke_background"
+        android:backgroundTint="@color/colorDimAliceBlue"
+        android:elevation="2dp"
+        android:padding="5dp"
+        android:text="Today 25 p.m"
+        android:textSize="12sp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_Time">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/receiver_profile_image"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/circle_stroke_profile_layout"
+            android:elevation="1dp"
+            android:padding="2dp"
+            android:src="@drawable/profile" />
+
+        <TextView
+            android:id="@+id/receiver_msgs_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="14dp"
+            android:layout_toEndOf="@+id/receiver_profile_image"
+            android:background="@drawable/receiver_messages_layout"
+            android:backgroundTint="@color/colorLightGrey"
+            android:elevation="2dp"
+            android:fontFamily="@string/app_font"
+            android:maxWidth="200dp"
+            android:padding="10dp"
+            android:text="receiver msgs here"
+            android:textColor="@color/colorBlack"
+            android:textSize="14sp" />
+
+        <com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@+id/receiver_profile_image"
+            android:elevation="2dp"
+            app:corner_radius="10dp">
+
+            <ImageView
+                android:id="@+id/message_receiver_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true" />
+        </com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout>
+
+        <com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="5dp"
+            android:layout_toStartOf="@+id/sender_profile_image"
+            android:elevation="2dp"
+            app:corner_radius="10dp">
+
+            <ImageView
+                android:id="@+id/message_sender_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true" />
+        </com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout>
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/sender_profile_image"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/circle_stroke_profile_layout"
+            android:elevation="2dp"
+            android:padding="2dp"
+            android:src="@drawable/profile" />
+
+        <TextView
+            android:id="@+id/sender_msgs_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="@+id/receiver_msgs_text"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="3dp"
+            android:layout_toStartOf="@+id/sender_profile_image"
+            android:background="@drawable/sender_messages_layout"
+            android:elevation="1dp"
+            android:fontFamily="@string/app_font"
+            android:maxWidth="200dp"
+            android:padding="10dp"
+            android:text="sender msgs here"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/receiverAudioMsg_linearLayout"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="@+id/receiver_msgs_text"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/receiver_profile_image"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="@color/colorDimGrey"
+            android:elevation="1dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="2dp">
+
+            <ImageView
+                android:id="@+id/receiverPlayAudioBtn"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:elevation="2dp"
+                android:src="@drawable/ic_play_audio"
+                android:tint="@color/colorLightBlue" />
+
+            <ImageView
+                android:id="@+id/receiverPauseAudioBtn"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:elevation="2dp"
+                android:src="@drawable/ic_pause_audio"
+                android:tint="@color/colorLightBlue"
+                android:visibility="gone" />
+
+            <!--<LinearLayout-->
+            <!--android:id="@+id/receiverSeekbar"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="2dp"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@drawable/round_corner_background"-->
+            <!--android:backgroundTint="@color/colorDarkGrey"-->
+            <!--android:orientation="horizontal" />-->
+
+            <TextView
+                android:id="@+id/receiverAudioTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="00:00"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/receiverElapsedTimeLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text=""
+                android:textSize="9sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/senderAudioMsg_linearLayout"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="@+id/receiver_msgs_text"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="3dp"
+            android:layout_toStartOf="@+id/sender_profile_image"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="@color/colorDimGrey"
+            android:elevation="1dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="2dp">
+
+            <ImageView
+                android:id="@+id/senderPlayAudioBtn"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:backgroundTint="@color/colorLightGrey"
+                android:elevation="2dp"
+                android:src="@drawable/ic_play_audio"
+                android:tint="@color/colorLightBlue" />
+
+            <ImageView
+                android:id="@+id/senderPauseAudioBtn"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:elevation="2dp"
+                android:src="@drawable/ic_pause_audio"
+                android:tint="@color/colorLightBlue"
+                android:visibility="gone" />
+
+            <!--<LinearLayout-->
+            <!--android:id="@+id/seekbar"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="2dp"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@drawable/round_corner_background"-->
+            <!--android:backgroundTint="@color/colorDarkGrey"-->
+            <!--android:orientation="horizontal" />-->
+
+            <!--<ProgressBar-->
+            <!--android:id="@+id/senderProgress"-->
+            <!--style="@style/Widget.AppCompat.ProgressBar.Horizontal"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1" />-->
+            <TextView
+                android:id="@+id/senderAudioRemainTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="00:00"
+                android:textSize="11sp" />
+            <!--<TextView-->
+            <!--android:id="@+id/senderAudioTime"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:text="00:00"-->
+            <!--android:textSize="11sp" />-->
+
+
+        </LinearLayout>
+
+        <!--VIDEO VIEW-->
+
+        <com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="5dp"
+            android:layout_toStartOf="@+id/sender_profile_image"
+            android:background="@drawable/round_corner_stroke_background"
+            android:backgroundTint="@color/colorDarkGrey"
+            android:elevation="5dp"
+            app:corner_radius="8dp">
+
+            <ImageView
+                android:id="@+id/senderVideoPlayBtn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:elevation="5dp"
+                android:focusable="true"
+                android:padding="3dp"
+                android:src="@drawable/ic_play_audio"
+                android:tint="@color/colorDimAliceBlue" />
+
+            <ImageView
+                android:id="@+id/sender_videoThumbnail"
+                android:layout_width="220dp"
+                android:layout_height="220dp"
+                android:alpha="0.5"
+                android:focusable="false"
+                android:scaleType="centerCrop" />
+
+
+        </com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout>
+
+        <com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/receiver_profile_image"
+            android:background="@drawable/round_corner_stroke_background"
+            android:backgroundTint="@color/colorDarkGrey"
+            android:elevation="5dp"
+            app:corner_radius="8dp">
+
+            <ImageView
+                android:id="@+id/receiverVideoPlayBtn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:elevation="5dp"
+                android:focusable="true"
+                android:padding="3dp"
+                android:src="@drawable/ic_play_audio"
+                android:tint="@color/colorDimAliceBlue" />
+
+            <ImageView
+                android:id="@+id/receiver_videoThumbnail"
+                android:layout_width="220dp"
+                android:layout_height="220dp"
+                android:alpha="0.5"
+                android:focusable="false"
+                android:scaleType="centerCrop" />
+
+
+        </com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout>
+
+
+        <TextView
+            android:id="@+id/textView_sent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sender_profile_image"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:text="sent"
+            android:textSize="13sp" />
+    </RelativeLayout>
+</RelativeLayout>

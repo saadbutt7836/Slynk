@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "968589626307",
+    "firebase_url": "https://flash-chat-4f598.firebaseio.com",
+    "project_id": "flash-chat-4f598",
+    "storage_bucket": "flash-chat-4f598.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:968589626307:android:e09cae580a1a9822",
+        "android_client_info": {
+          "package_name": "com.example.slynk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "968589626307-rf1mahb5huhphiaibb1keqpqdk6d72f9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.slynk",
+            "certificate_hash": "e5f06f162c3327a44700a4b14df26371ef9468ec"
+          }
+        },
+        {
+          "client_id": "968589626307-0ab8m6minba4juhqo7q9u53ijlqkjsh5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEqyTHYC9AZje3LUnitGhDJj82qZWAKpE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "968589626307-0ab8m6minba4juhqo7q9u53ijlqkjsh5.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "968589626307-fcf84k72vefpe9asci2m3j8se3lftejd.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.pronuxtech.Slynk"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:968589626307:android:0a0f327df8ac87e1",
+        "android_client_info": {
+          "package_name": "com.pronuxtech.slynk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "968589626307-8e8n3pf79mdjhemgj57c2lbckukniki8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pronuxtech.slynk",
+            "certificate_hash": "e5f06f162c3327a44700a4b14df26371ef9468ec"
+          }
+        },
+        {
+          "client_id": "968589626307-0ab8m6minba4juhqo7q9u53ijlqkjsh5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEqyTHYC9AZje3LUnitGhDJj82qZWAKpE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "968589626307-0ab8m6minba4juhqo7q9u53ijlqkjsh5.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "968589626307-fcf84k72vefpe9asci2m3j8se3lftejd.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.pronuxtech.Slynk"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

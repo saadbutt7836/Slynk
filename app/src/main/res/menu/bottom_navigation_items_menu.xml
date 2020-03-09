@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottomHome"
+        android:enabled="true"
+        android:icon="@drawable/homeicon"
+        android:title="Home" />
+    <item
+        android:id="@+id/bottomSearch"
+        android:icon="@drawable/search_icon"
+        android:title="Search" />
+    <item
+        android:id="@+id/bottomChat"
+        android:icon="@drawable/ic_camera"
+        android:title="Post" />
+    <item
+        android:id="@+id/bottomGroups"
+        android:icon="@drawable/notificationicon"
+        android:title="Notification" />
+    <item
+        android:id="@+id/bottomUser"
+        android:icon="@drawable/settings"
+        android:title="Account" />
+
+</menu>

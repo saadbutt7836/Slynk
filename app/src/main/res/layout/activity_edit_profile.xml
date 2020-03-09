@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".EditProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2.0dip"
+                android:fontFamily="@string/app_font"
+                android:text="FIRST NAME"
+                android:textColor="@color/colorTitle"
+                android:textSize="13.0dip"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/update_FirstName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/round_corner_background"
+                android:backgroundTint="@color/colorLightGrey"
+                android:fontFamily="@string/app_font"
+                android:inputType="textPersonName"
+                android:padding="7dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2.0dip"
+                android:fontFamily="@string/app_font"
+                android:text="LAST NAME"
+                android:textColor="@color/colorTitle"
+                android:textSize="13.0dip"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/update_LastName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/round_corner_background"
+                android:backgroundTint="@color/colorLightGrey"
+                android:fontFamily="@string/app_font"
+                android:inputType="textPersonName"
+                android:padding="7dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2.0dip"
+                android:fontFamily="@string/app_font"
+                android:text="USER NAME"
+                android:textColor="@color/colorTitle"
+                android:textSize="13.0dip"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/update_UserName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/round_corner_background"
+                android:backgroundTint="@color/colorLightGrey"
+                android:fontFamily="@string/app_font"
+                android:digits="@string/user_name_restrictions"
+                android:inputType="textPersonName"
+                android:padding="7dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2.0dip"
+                android:fontFamily="@string/app_font"
+                android:text="UNIVERSITY NAME"
+                android:textColor="@color/colorTitle"
+                android:textSize="13.0dip"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/update_UniversityName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/round_corner_background"
+                android:backgroundTint="@color/colorLightGrey"
+                android:fontFamily="@string/app_font"
+                android:inputType="textPersonName"
+                android:padding="7dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2.0dip"
+                android:fontFamily="@string/app_font"
+                android:text="Course"
+                android:textColor="@color/colorTitle"
+                android:textSize="13.0dip"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_corner_background"
+                android:backgroundTint="@color/colorLightGrey">
+
+                <Spinner
+                    android:id="@+id/update_Course"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="2.0dip"
+                    android:fontFamily="@string/app_font" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2.0dip"
+                android:fontFamily="@string/app_font"
+                android:text="Course Level"
+                android:textColor="@color/colorTitle"
+                android:textSize="13.0dip"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_corner_background"
+                android:backgroundTint="@color/colorLightGrey">
+
+                <Spinner
+                    android:id="@+id/update_CourseLevel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="2.0dip"
+                    android:fontFamily="@string/app_font" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/update_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@color/colorLightBlue"
+            android:text="UPDATE"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>

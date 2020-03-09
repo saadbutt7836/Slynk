@@ -1,0 +1,70 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.0"
+    defaultConfig {
+        applicationId "com.pronuxtech.slynk"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+
+    implementation 'com.google.firebase:firebase-storage:16.0.5'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.firebase:firebase-database:16.0.5'
+    implementation 'com.google.firebase:firebase-auth:16.1.0'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.hbb20:ccp:1.7.1'
+    implementation 'com.android.support:cardview-v7:21.+'
+    implementation 'com.android.support:recyclerview-v7:21.+'
+    implementation 'de.hdodenhof:circleimageview:3.0.0'
+    implementation 'com.github.hani-momanii:SuperNova-Emoji:1.1'
+
+
+//FIREBASE RECYCLEVIEW
+    implementation 'com.firebaseui:firebase-ui-database:4.3.0'
+//    CROP IMAGE
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.8.+'
+
+//    COMPRESS IMAGE SIZE
+    implementation 'id.zelory:compressor:2.1.0'
+//    ROUND CORNERS IMAGEVIEW
+    implementation 'com.jcminarro:RoundKornerLayouts:0.2.0'
+//    implementation 'com.github.amanjeetsingh150:ImageZipper:1.3'
+
+//    AUDIO RECORD WAVE
+    implementation 'com.scwang.wave:MultiWaveHeader:1.0.0-alpha-1'
+
+//    VIDEO PLAYER
+    implementation 'com.github.khizar1556.MKVideoPlayer:mkvideoplayer:0.1.5'
+
+//    PICASSO OFFLINE FEATURES LIBRARY
+    implementation "com.squareup.okhttp3:okhttp:4.1.0"
+
+//    LOCATION
+//    implementation 'com.github.delight-im:Android-SimpleLocation:v1.0.1'
+//    implementation 'com.google.android.gms:play-services-location:11.0.0'
+//    implementation 'com.google.android.gms:play-services:12.0.1'
+}

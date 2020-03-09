@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#292A3C</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FD5667</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorLightGrey">#D3D3D3</color>
+    <color name="colorDimAliceBlue">#f0f8ff</color>
+    <color name="colorDimGrey">#DCDCDC</color>
+    <color name="colorTitle">#292A3C</color>
+    <color name="colorPink">#FD5667</color>
+    <color name="colorLightBlue">#1592E6</color>
+    <color name="colorFieldBack">#E7EBED</color>
+    <color name="colorDarkGrey">#454545</color>
+    <color name="colorGreen">#15E684</color>
+
+
+</resources>
+
+
